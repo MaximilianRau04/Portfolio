@@ -1,0 +1,63 @@
+:root {
+  --text: #111;
+  --muted: #666;
+  --bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+header, main, footer {
+  max-width: 720px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  padding-top: 4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.project {
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+a:hover {
+  border-bottom-color: var(--text);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
