@@ -1,12 +1,11 @@
 # Maximilian Rau | Personal Portfolio
 
-![Portfolio Preview](placeholder-image.png)
 Welcome to the repository of my personal portfolio website. This project serves as a central hub to showcase my skills, software engineering projects, and educational background as a student at the University of Stuttgart.
 
 ## 🚀 Live Demo
 
 You can view the live website here:  
-**[Link to your GitHub Page](https://maximilianrau04.github.io/Portfolio)**
+**[View Live Site](https://maximilianrau04.github.io/Portfolio)**
 
 ## ✨ Features
 
@@ -21,7 +20,7 @@ The portfolio currently highlights the following projects:
 
 1.  **Todo Application:** A full-stack task manager (Spring Boot & Vue.js).
 2.  **Event & Exchange Day Manager:** An internship project for managing company events (Spring Boot & Vue.js).
-3.  **Movies & Series Manager:** A tracking application for media content (Spring Boot & React).
+3.  **CineMate:** A tracking application for media content (Spring Boot & React).
 
 ## 💻 Local Setup
 
@@ -35,8 +34,8 @@ To run this portfolio locally on your machine:
     ```bash
     cd portfolio
     ```
-3.  **Open the file:**
-    Simply open the `index.html` file in your preferred web browser.
+3.  **Open with Live Server:**
+    Open the `index.html` file via Live Server in your preferred web browser.
 
 ## 👤 Author
 
