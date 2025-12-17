@@ -1,0 +1,97 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --accent: #4f46e5; 
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --text: #f0f0f0;
+  --muted: #bbbbbb;
+  --accent: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+  transition: background 0.3s, color 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 720px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+button#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid var(--muted);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text);
+  z-index: 1000; 
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+h3 {
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+}
+
+.project {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+  background-color: rgba(79, 70, 229, 0.05);
+  border-radius: 5px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
