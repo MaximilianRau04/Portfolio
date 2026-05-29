@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutzerklärung – Maximilian Rau</title>
+<link rel="stylesheet" href="style.css" />
+    <style>
+      .legal-page {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 8rem 2rem 4rem;
+      }
+      .legal-page h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 2.5rem;
+      }
+      .legal-page h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text);
+        margin: 2rem 0 0.5rem;
+      }
+      .legal-page p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+      .legal-page a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .legal-page a:hover {
+        text-decoration: underline;
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        margin-bottom: 3rem;
+        transition: color 0.2s;
+      }
+      .back-link:hover { color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">MR<span class="accent-dot">.</span></a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="legal-page">
+        <a href="index.html" class="back-link">← Zurück</a>
+        <h1>Datenschutzerklärung</h1>
+
+        <h2>1. Verantwortlicher</h2>
+        <p>
+          Verantwortlicher im Sinne der DSGVO ist:<br />
+          Maximilian Rau, Carl-Mauch-Weg 2, 71691 Freiberg am Neckar<br />
+          E-Mail: <a href="mailto:maxi.rau2004@gmail.com">maxi.rau2004@gmail.com</a>
+        </p>
+
+        <h2>2. Hosting</h2>
+        <p>
+          Diese Website wird über GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco,
+          CA 94107, USA) gehostet. Beim Aufruf der Seite wird Ihre IP-Adresse vorübergehend von
+          GitHub verarbeitet. Weitere Informationen finden Sie in der
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Datenschutzerklärung von GitHub</a>.
+        </p>
+
+        <h2>3. Kontaktformular</h2>
+        <p>
+          Wenn Sie das Kontaktformular auf dieser Website nutzen, werden die von Ihnen eingegebenen
+          Daten (Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage verarbeitet und per
+          E-Mail an mich weitergeleitet. Diese Daten werden nicht an Dritte weitergegeben und nach
+          abgeschlossener Bearbeitung gelöscht. Die Verarbeitung erfolgt auf Grundlage von
+          Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO
+          (berechtigtes Interesse an der Beantwortung von Anfragen).
+        </p>
+
+        <h2>4. Schriftarten</h2>
+        <p>
+          Diese Website verwendet die Schriftarten Inter und JetBrains Mono, die lokal auf dem
+          Server gehostet werden. Es findet keine Verbindung zu externen Servern statt und
+          es werden keine Daten an Dritte übertragen.
+        </p>
+
+        <h2>5. Lokaler Speicher (localStorage)</h2>
+        <p>
+          Diese Website speichert Ihre Präferenzen für Sprache und Farbschema im lokalen Speicher
+          Ihres Browsers (localStorage). Es werden keine Daten an Server übertragen. Der lokale
+          Speicher ist kein Cookie und unterliegt nicht der Cookie-Richtlinie, enthält jedoch
+          technisch notwendige Einstellungen zur Verbesserung der Nutzererfahrung.
+        </p>
+
+        <h2>6. Keine Analyse-Tools</h2>
+        <p>
+          Diese Website verwendet keine Tracking- oder Analyse-Tools (z. B. Google Analytics).
+          Es werden keine Nutzungsprofile erstellt.
+        </p>
+
+        <h2>7. Ihre Rechte</h2>
+        <p>
+          Sie haben nach der DSGVO folgende Rechte gegenüber mir bezüglich der Sie betreffenden
+          personenbezogenen Daten: Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung
+          (Art. 17), Einschränkung der Verarbeitung (Art. 18), Widerspruch (Art. 21) sowie
+          Datenübertragbarkeit (Art. 20). Außerdem haben Sie das Recht, sich bei einer
+          Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Für Baden-Württemberg ist
+          dies der
+          <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">Landesbeauftragte für Datenschutz und Informationsfreiheit Baden-Württemberg</a>.
+        </p>
+
+        <h2>8. Aktualität</h2>
+        <p>Stand: Mai 2026</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="nav-logo">MR<span class="accent-dot">.</span></span>
+        <p>© 2026 Maximilian Rau</p>
+      </div>
+    </footer>
+
+    <script>
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    </script>
+  </body>
+</html>
