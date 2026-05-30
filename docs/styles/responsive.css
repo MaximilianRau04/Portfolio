@@ -1,0 +1,85 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured {
+    grid-column: span 1;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    min-width: unset;
+  }
+
+  .stat-card {
+    flex: 1;
+  }
+
+  .tl-entry {
+    grid-template-columns: 20px 1fr;
+    gap: 0 1rem;
+  }
+
+  .tl-time {
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-bottom: 0.35rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-width: 64px;
+    padding: 0.7rem 0.6rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-submit {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero {
+    padding: calc(var(--nav-h) + 3rem) 1.5rem 5rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  .about-stats {
+    flex-direction: column;
+  }
+}
