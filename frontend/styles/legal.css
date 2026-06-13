@@ -8,6 +8,13 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.legal-page h1::before {
+  content: "> ";
+  font-family: var(--mono);
+  color: var(--accent);
 }
 
 .legal-page h2 {
@@ -15,6 +22,12 @@
   font-weight: 600;
   color: var(--text);
   margin: 2rem 0 0.5rem;
+}
+
+.legal-page h2::before {
+  content: "# ";
+  font-family: var(--mono);
+  color: var(--accent);
 }
 
 .legal-page p,
@@ -38,7 +51,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.9rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
   color: var(--text-muted);
   text-decoration: none;
   margin-bottom: 3rem;

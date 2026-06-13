@@ -1,0 +1,163 @@
+/* FONTS */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/inter-v20-latin/inter-v20-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter-v20-latin/inter-v20-latin-regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter-v20-latin/inter-v20-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter-v20-latin/inter-v20-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter-v20-latin/inter-v20-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/inter-v20-latin/inter-v20-latin-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-v24-latin/jetbrains-mono-v24-latin-regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/jetbrains-mono-v24-latin/jetbrains-mono-v24-latin-500.woff2")
+    format("woff2");
+}
+
+/* VARIABLES — Catppuccin (Mocha dark / Latte light) */
+:root {
+  /* surfaces */
+  --bg: #1e1e2e; /* base */
+  --bg-2: #181825; /* mantle */
+  --bg-3: #11111b; /* crust */
+  --bg-card: #181825;
+  --bg-card-hover: #262637;
+  --surface: #313244; /* surface0 */
+  --border: #313244;
+  --border-hover: #585b70;
+
+  /* text */
+  --text: #cdd6f4;
+  --text-subtle: #bac2de;
+  --text-muted: #7f849c;
+  --comment: #6c7086;
+
+  /* syntax accents */
+  --accent: #a6e3a1; /* green — signature / prompt */
+  --accent-2: #89b4fa; /* blue — links / functions */
+  --mauve: #cba6f7;
+  --peach: #fab387;
+  --teal: #94e2d5;
+  --red: #f38ba8;
+  --yellow: #f9e2af;
+
+  --accent-glow: rgba(166, 227, 161, 0.25);
+  --gradient: linear-gradient(135deg, #89b4fa, #cba6f7);
+  --gradient-text: linear-gradient(135deg, #89b4fa, #cba6f7);
+
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --nav-h: 64px;
+  --max-w: 1100px;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] {
+  --bg: #eff1f5; /* base */
+  --bg-2: #e6e9ef; /* mantle */
+  --bg-3: #dce0e8; /* crust */
+  --bg-card: #e6e9ef;
+  --bg-card-hover: #dce0e8;
+  --surface: #ccd0da; /* surface0 */
+  --border: #ccd0da;
+  --border-hover: #9ca0b0;
+
+  --text: #4c4f69;
+  --text-subtle: #5c5f77;
+  --text-muted: #8c8fa1;
+  --comment: #9ca0b0;
+
+  --accent: #40a02b; /* green */
+  --accent-2: #1e66f5; /* blue */
+  --mauve: #8839ef;
+  --peach: #fe640b;
+  --teal: #179299;
+  --red: #d20f39;
+  --yellow: #df8e1d;
+
+  --accent-glow: rgba(64, 160, 43, 0.18);
+  --gradient: linear-gradient(135deg, #1e66f5, #8839ef);
+  --gradient-text: linear-gradient(135deg, #1e66f5, #8839ef);
+}
+
+/* RESET & BASE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text);
+}

@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maximilian Rau - Software Engineering</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/sections.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="nav-brand">
+          <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <a href="#home" class="nav-logo"
+            >MR<span class="accent-dot">.</span></a
+          >
+        </div>
+        <div class="nav-links">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+          <button id="lang-toggle" aria-label="Toggle language">DE</button>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <svg
+              class="icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero-grid"></div>
+        <div class="hero-window">
+          <div class="term-bar">
+            <span class="win-dots" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span class="term-title">maximilian@raudev: ~/portfolio</span>
+          </div>
+          <div class="term-body hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span data-i18n="hero.badge">Available for opportunities</span>
+            </div>
+            <p class="term-prompt">
+              <span class="sym">$</span><span class="cmd">whoami</span>
+            </p>
+            <h1 class="hero-name">
+              Maximilian Rau<span class="accent-dot">_</span>
+            </h1>
+            <p class="term-prompt">
+              <span class="sym">$</span><span class="cmd">cat</span> role.txt
+            </p>
+            <p class="hero-title">
+              <span class="typed-text"></span><span class="cursor">▋</span>
+            </p>
+            <p class="hero-desc" data-i18n="hero.desc">
+              Software Engineering student at the University of Stuttgart -
+              building full-stack applications and exploring the depths of
+              computer architecture and systems programming.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary"
+                ><span class="btn-prompt">$</span
+                ><span data-i18n="hero.btn.projects">View Projects</span></a
+              >
+              <a href="#contact" class="btn btn-ghost"
+                ><span class="btn-prompt">$</span
+                ><span data-i18n="hero.btn.contact">Get in Touch</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <div class="scroll-line"></div>
+          <span>scroll</span>
+        </div>
+      </section>
+
+      <!-- Marquee -->
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Java</span><span class="m-sep">—</span> <span>Spring Boot</span
+          ><span class="m-sep">—</span> <span>Vue.js</span
+          ><span class="m-sep">—</span> <span>React</span
+          ><span class="m-sep">—</span> <span>TypeScript</span
+          ><span class="m-sep">—</span> <span>VHDL</span
+          ><span class="m-sep">—</span> <span>Docker</span
+          ><span class="m-sep">—</span> <span>PostgreSQL</span
+          ><span class="m-sep">—</span> <span>Hibernate</span
+          ><span class="m-sep">—</span> <span>Git</span
+          ><span class="m-sep">—</span> <span>Linux</span
+          ><span class="m-sep">—</span> <span>REST APIs</span
+          ><span class="m-sep">—</span> <span>Maven</span
+          ><span class="m-sep">—</span> <span>C#</span
+          ><span class="m-sep">—</span> <span>Python</span
+          ><span class="m-sep">—</span> <span>Java</span
+          ><span class="m-sep">—</span> <span>Spring Boot</span
+          ><span class="m-sep">—</span> <span>Vue.js</span
+          ><span class="m-sep">—</span> <span>React</span
+          ><span class="m-sep">—</span> <span>TypeScript</span
+          ><span class="m-sep">—</span> <span>VHDL</span
+          ><span class="m-sep">—</span> <span>Docker</span
+          ><span class="m-sep">—</span> <span>PostgreSQL</span
+          ><span class="m-sep">—</span> <span>Hibernate</span
+          ><span class="m-sep">—</span> <span>Git</span
+          ><span class="m-sep">—</span> <span>Linux</span
+          ><span class="m-sep">—</span> <span>REST APIs</span
+          ><span class="m-sep">—</span> <span>Maven</span
+          ><span class="m-sep">—</span> <span>C#</span
+          ><span class="m-sep">—</span> <span>Python</span
+          ><span class="m-sep">—</span>
+        </div>
+      </div>
+
+      <!-- About -->
+      <section class="section fade-in" id="about">
+        <div class="section-inner">
+          <div class="section-label" data-i18n="about.label">01 — About</div>
+          <h2 class="section-title" data-i18n="about.title">Who I Am</h2>
+          <div class="about-grid">
+            <figure class="about-photo">
+              <div class="photo-bar">
+                <span class="win-dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="photo-name">maximilian.png</span>
+              </div>
+              <div class="photo-frame">
+                <img src="assets/maximilian.png" alt="Maximilian Rau" />
+              </div>
+            </figure>
+            <div class="about-text">
+              <p data-i18n-html="about.p1">
+                I'm a <strong>Software Engineering student</strong> at the
+                University of Stuttgart with a passion for building clean,
+                scalable systems. My work spans the full stack — from crafting
+                REST APIs with Spring Boot to building reactive frontends with
+                Vue.js and React.
+              </p>
+              <p data-i18n-html="about.p2">
+                I believe great software is defined by its foundations:
+                thoughtful architecture, thorough testing, and maintainable
+                code. I enjoy diving deep into complex problems and finding
+                elegant solutions.
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-label" data-i18n="about.stat.projects"
+                  >Projects</span
+                >
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-label" data-i18n="about.stat.technologies"
+                  >Technologies</span
+                >
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">BSc</span>
+                <span class="stat-label" data-i18n="about.stat.degree"
+                  >Software Eng.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section fade-in" id="experience">
+        <div class="section-inner">
+          <div class="section-label" data-i18n="experience.label">
+            02 — Experience
+          </div>
+          <h2 class="section-title" data-i18n="experience.title">Journey</h2>
+          <div class="timeline">
+            <!-- HiWi -->
+            <div class="tl-entry">
+              <div class="tl-time">2025 — now</div>
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-header">
+                  <h3 class="tl-title" data-i18n="exp.hiwi.title">
+                    Studentische Hilfskraft
+                  </h3>
+                  <span class="tl-org">ISW, Universität Stuttgart</span>
+                  <span class="tl-type tl-type--work" data-i18n="exp.type.hiwi"
+                    >HiWi</span
+                  >
+                </div>
+                <p class="tl-desc" data-i18n="exp.hiwi.desc">
+                  Student research assistant at the Institute for Control
+                  Engineering of Machine Tools and Manufacturing Units,
+                  supporting research and teaching in software-related areas.
+                </p>
+              </div>
+            </div>
+
+            <!-- University -->
+            <div class="tl-entry">
+              <div class="tl-time">2023 — now</div>
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-header">
+                  <h3 class="tl-title" data-i18n="exp.uni.title">
+                    B.Sc. Software Engineering
+                  </h3>
+                  <span class="tl-org">Universität Stuttgart</span>
+                  <span class="tl-type tl-type--edu" data-i18n="exp.type.edu"
+                    >Education</span
+                  >
+                </div>
+                <p class="tl-desc" data-i18n="exp.uni.desc">
+                  Studying software architecture, algorithms, computer
+                  architecture, and systems programming. Projects span from
+                  processor design in VHDL to full-stack web applications.
+                </p>
+                <div class="tl-tags">
+                  <span class="tag">Software Engineering</span>
+                  <span class="tag">Computer Architecture</span>
+                  <span class="tag">Algorithms</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- School -->
+            <div class="tl-entry">
+              <div class="tl-time">2014 — 2023</div>
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-header">
+                  <h3 class="tl-title" data-i18n="exp.school.title">Abitur</h3>
+                  <span class="tl-org" data-i18n="exp.school.org"
+                    >Gymnasium</span
+                  >
+                  <span class="tl-type tl-type--edu" data-i18n="exp.type.edu"
+                    >Education</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section fade-in" id="projects">
+        <div class="section-inner">
+          <div class="section-label" data-i18n="projects.label">02 — Work</div>
+          <h2 class="section-title" data-i18n="projects.title">
+            Featured Projects
+          </h2>
+          <div class="proj-list">
+            <p class="proj-cmd">
+              <span class="sym">$</span><span class="cmd">ls</span> ~/projects
+            </p>
+
+            <!-- CPU Architecture -->
+            <a
+              href="https://github.com/MaximilianRau04/CPU-Architecture"
+              target="_blank"
+              class="proj-item proj--teal"
+            >
+              <div class="proj-row">
+                <span class="proj-idx">001</span>
+                <h3 class="proj-name">
+                  cpu-architecture<span class="proj-slash">/</span>
+                </h3>
+                <span class="proj-meta">VHDL · C# · Computer Architecture</span>
+                <svg
+                  class="proj-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" />
+                </svg>
+              </div>
+              <div class="proj-detail">
+                <p data-i18n="project.cpu.desc">
+                  University project: a PicoBlaze-style 8-bit processor
+                  implemented in VHDL with a 2-stage pipeline, 16
+                  general-purpose registers, and 256 I/O ports. Includes a
+                  custom C# assembler toolchain and comprehensive testbenches.
+                </p>
+                <div class="project-tags">
+                  <span class="tag tag-hw">VHDL</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">Computer Architecture</span>
+                  <span class="tag">Pipelining</span>
+                  <span class="tag">Assembler</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- AI Workspace -->
+            <a
+              href="https://github.com/MaximilianRau04/AI-Workspace"
+              target="_blank"
+              class="proj-item proj--blue"
+            >
+              <div class="proj-row">
+                <span class="proj-idx">002</span>
+                <h3 class="proj-name">
+                  ai-workspace<span class="proj-slash">/</span>
+                </h3>
+                <span class="proj-meta">Python · AI · Automation</span>
+                <svg
+                  class="proj-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" />
+                </svg>
+              </div>
+              <div class="proj-detail">
+                <p data-i18n="project.aiworkspace.desc">
+                  AI-powered workspace for experimenting with large language
+                  models, automation workflows, and intelligent tooling.
+                  Designed to streamline development tasks and explore practical
+                  AI applications.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">AI</span>
+                  <span class="tag">LLMs</span>
+                  <span class="tag">Automation</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- CineMate -->
+            <a
+              href="https://github.com/MaximilianRau04/CineMate"
+              target="_blank"
+              class="proj-item proj--violet"
+            >
+              <div class="proj-row">
+                <span class="proj-idx">003</span>
+                <h3 class="proj-name">
+                  cinemate<span class="proj-slash">/</span>
+                </h3>
+                <span class="proj-meta">Java · Spring Boot · React</span>
+                <svg
+                  class="proj-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" />
+                </svg>
+              </div>
+              <div class="proj-detail">
+                <p data-i18n="project.cinemate.desc">
+                  Web application for discovering, managing, and tracking movies
+                  and TV series. Built with a Spring Boot REST API backend and a
+                  React frontend with a clean, responsive UI.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">React</span>
+                  <span class="tag">REST API</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Event Manager -->
+            <a
+              href="https://github.com/MaximilianRau04/Software-Praktikum"
+              target="_blank"
+              class="proj-item proj--amber"
+            >
+              <div class="proj-row">
+                <span class="proj-idx">004</span>
+                <h3 class="proj-name">
+                  event-manager<span class="proj-slash">/</span>
+                </h3>
+                <span class="proj-meta">Java · Spring Boot · Vue.js</span>
+                <svg
+                  class="proj-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M7 17L17 7M7 7h10v10" />
+                </svg>
+              </div>
+              <div class="proj-detail">
+                <p data-i18n="project.event.desc">
+                  Enterprise web application developed during a software
+                  engineering internship at itestra. Manages company events and
+                  exchange days with role-based access control and scheduling.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">Vue.js</span>
+                  <span class="tag">Role-based Auth</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="projects-more">
+            <a
+              href="https://github.com/MaximilianRau04"
+              target="_blank"
+              class="btn btn-ghost"
+            >
+              <span data-i18n="projects.more">View more on GitHub</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82a7.68 7.68 0 012-.27c.68.003 1.36.092 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section fade-in" id="skills">
+        <div class="section-inner">
+          <div class="section-label" data-i18n="skills.label">03 — Skills</div>
+          <h2 class="section-title" data-i18n="skills.title">Technologies</h2>
+          <div class="tech-window">
+            <div class="tech-bar">
+              <span class="win-dots" aria-hidden="true"
+                ><i></i><i></i><i></i
+              ></span>
+              <span class="term-title">~/skills — stack</span>
+            </div>
+            <div class="tech-tabs" role="tablist">
+              <button
+                class="tech-tab active"
+                data-tab="languages"
+                data-i18n="skills.group.languages"
+              >
+                Languages
+              </button>
+              <button
+                class="tech-tab"
+                data-tab="frontend"
+                data-i18n="skills.group.frontend"
+              >
+                Frontend
+              </button>
+              <button
+                class="tech-tab"
+                data-tab="backend"
+                data-i18n="skills.group.backend"
+              >
+                Backend
+              </button>
+              <button
+                class="tech-tab"
+                data-tab="tools"
+                data-i18n="skills.group.tools"
+              >
+                Tools &amp; Ops
+              </button>
+            </div>
+            <div class="tech-panes">
+              <!-- Languages -->
+              <div class="tech-pane active" data-pane="languages">
+                <div class="skill-cards">
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                        alt="Java"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Java</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">JavaScript</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                        alt="TypeScript"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">TypeScript</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                        alt="C#"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">C#</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                        alt="Python"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Python</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon skill-card-icon--accent">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                      </svg>
+                    </div>
+                    <span class="skill-card-name">SQL</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon skill-card-icon--accent">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <rect x="9" y="9" width="6" height="6" />
+                        <line x1="9" y1="1" x2="9" y2="4" />
+                        <line x1="15" y1="1" x2="15" y2="4" />
+                        <line x1="9" y1="20" x2="9" y2="23" />
+                        <line x1="15" y1="20" x2="15" y2="23" />
+                        <line x1="20" y1="9" x2="23" y2="9" />
+                        <line x1="20" y1="14" x2="23" y2="14" />
+                        <line x1="1" y1="9" x2="4" y2="9" />
+                        <line x1="1" y1="14" x2="4" y2="14" />
+                      </svg>
+                    </div>
+                    <span class="skill-card-name">VHDL</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Frontend -->
+              <div class="tech-pane" data-pane="frontend">
+                <div class="skill-cards">
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                        alt="Vue.js"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Vue.js</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        alt="React"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">React</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                        alt="HTML5"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">HTML5</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                        alt="CSS3"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">CSS3</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Backend -->
+              <div class="tech-pane" data-pane="backend">
+                <div class="skill-cards">
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                        alt="Spring Boot"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Spring Boot</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon skill-card-icon--accent">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M18 20V10" />
+                        <path d="M12 20V4" />
+                        <path d="M6 20v-6" />
+                      </svg>
+                    </div>
+                    <span class="skill-card-name">REST APIs</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-plain.svg"
+                        alt="Hibernate"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Hibernate</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tools & Ops -->
+              <div class="tech-pane" data-pane="tools">
+                <div class="skill-cards">
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                        alt="Git"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Git</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                        alt="Docker"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Docker</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                        alt="Linux"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Linux</span>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card-icon">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                        alt="Maven"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="skill-card-name">Maven</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section fade-in" id="contact">
+        <div class="section-inner contact-inner">
+          <div class="section-label" data-i18n="contact.label">
+            04 — Contact
+          </div>
+          <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+          <p class="contact-desc" data-i18n="contact.desc">
+            I'm always open to new opportunities, collaborations, or a good
+            technical conversation. Feel free to reach out.
+          </p>
+
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" data-i18n="form.label.name"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    data-i18n-placeholder="form.ph.name"
+                    placeholder="Max Mustermann"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" data-i18n="form.label.email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    data-i18n-placeholder="form.ph.email"
+                    placeholder="max@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" data-i18n="form.label.message"
+                  >Message</label
+                >
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  data-i18n-placeholder="form.ph.message"
+                  placeholder="Hi Maximilian, ..."
+                  required
+                ></textarea>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary form-submit">
+                  <span data-i18n="form.submit">Send Message</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </button>
+                <div
+                  class="form-feedback"
+                  id="form-feedback"
+                  aria-live="polite"
+                ></div>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-divider">
+            <span data-i18n="contact.divider">or reach me directly</span>
+          </div>
+
+          <div class="contact-cards">
+            <a href="mailto:maximilian@raudev.com" class="contact-card">
+              <div class="contact-card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">maximilian@raudev.com</span>
+              </div>
+              <svg
+                class="contact-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/MaximilianRau04"
+              target="_blank"
+              class="contact-card"
+            >
+              <div class="contact-card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82a7.68 7.68 0 012-.27c.68.003 1.36.092 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">MaximilianRau04</span>
+              </div>
+              <svg
+                class="contact-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/maximilian-rau-b63199340/"
+              target="_blank"
+              class="contact-card"
+            >
+              <div class="contact-card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.21c.837 0 1.356-.554 1.356-1.248-.015-.708-.519-1.248-1.341-1.248-.822 0-1.356.54-1.356 1.248 0 .694.519 1.248 1.327 1.248h.014zm4.908 8.21V9.359c0-.205.015-.41.076-.556.168-.41.551-.836 1.193-.836.842 0 1.179.63 1.179 1.554v4.679h2.4v-5.025c0-2.674-1.429-3.917-3.337-3.917-1.538 0-2.223.85-2.606 1.445h.036V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">Maximilian Rau</span>
+              </div>
+              <svg
+                class="contact-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="nav-logo">MR<span class="accent-dot">.</span></span>
+        <p data-i18n="footer.copy">© 2026 Maximilian Rau</p>
+        <div class="footer-links">
+          <a href="legal-notice/legal-notice.html" data-i18n="footer.legal"
+            >Impressum</a
+          >
+          <a
+            href="privacy-policy/privacy-policy.html"
+            data-i18n="footer.privacy"
+            >Datenschutz</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,19 +1,11 @@
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-featured {
-    grid-column: span 1;
-  }
-
+@media (max-width: 860px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2.25rem;
+  }
+
+  .about-photo {
+    max-width: 220px;
   }
 
   .about-stats {
@@ -23,6 +15,16 @@
 
   .stat-card {
     flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .tl-entry {
@@ -36,8 +38,12 @@
     margin-bottom: 0.35rem;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .proj-row {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .proj-meta {
+    display: none;
   }
 
   .skill-card {
@@ -59,7 +65,15 @@
   }
 
   .hero {
-    padding: calc(var(--nav-h) + 3rem) 1.5rem 5rem;
+    padding: calc(var(--nav-h) + 2rem) 1.25rem 5rem;
+  }
+
+  .term-body {
+    padding: 1.6rem 1.4rem 1.8rem;
+  }
+
+  .contact-form-wrap {
+    padding: 1.25rem;
   }
 
   .footer-inner {
@@ -81,5 +95,14 @@
 
   .about-stats {
     flex-direction: column;
+  }
+}
+
+/* Touch devices have no hover — keep project details expanded */
+@media (hover: none) {
+  .proj-detail {
+    max-height: none;
+    opacity: 1;
+    padding-bottom: 1.3rem;
   }
 }
