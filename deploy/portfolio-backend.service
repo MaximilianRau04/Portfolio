@@ -1,0 +1,36 @@
+################################################################################
+# systemd unit for the portfolio contact backend (Node/Express)
+#
+# Install:
+#   sudo cp deploy/portfolio-backend.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now portfolio-backend
+#
+# Logs:   journalctl -u portfolio-backend -f
+# Status: systemctl status portfolio-backend
+#
+# Adjust User= and the paths if you deploy somewhere other than
+# /var/www/portfolio. The .env file is loaded by dotenv from WorkingDirectory.
+################################################################################
+
+[Unit]
+Description=Portfolio Contact Backend
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/portfolio/backend
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+RestartSec=5
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/www/portfolio/backend
+
+[Install]
+WantedBy=multi-user.target
