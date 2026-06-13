@@ -32,7 +32,7 @@ const t = {
 const savedTheme = localStorage.getItem('theme') || 'dark';
 document.documentElement.setAttribute('data-theme', savedTheme);
 
-let currentLang = localStorage.getItem('lang') || 'de';
+let currentLang = localStorage.getItem('lang') || 'en';
 
 function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach((el) => {

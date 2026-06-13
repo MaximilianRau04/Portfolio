@@ -6,7 +6,11 @@ This site showcases selected projects, my technical focus, and my background as 
 ## Live Demo
 
 You can view the website here:
-[maximilianrau04.github.io/Portfolio](https://maximilianrau04.github.io/Portfolio)
+[raudev.com](https://raudev.com)
+
+The site is self-hosted on my own server: nginx serves the static frontend and
+reverse-proxies the contact API to a Node/Express backend (deployment configs in
+[`deploy/`](deploy/)).
 
 ## Projects
 
@@ -21,6 +25,14 @@ My portfolio currently includes the following projects:
 4. **CPU Architecture Project**  
     Project focused on CPU architecture and computer organization.
 
+## Project Structure
+
+```
+docs/      Static frontend (HTML, CSS, JS, fonts) — served by nginx
+backend/   Node/Express backend for the contact form (sends mail via SMTP)
+deploy/    nginx site config + systemd service for the self-hosted server
+```
+
 ## Local Setup
 
 Run the portfolio locally with these steps:
@@ -33,7 +45,18 @@ Run the portfolio locally with these steps:
     ```bash
     cd Portfolio
     ```
-3. Open `index.html` in your browser (or run it with Live Server)
+3. Open `docs/index.html` in your browser (or serve `docs/` with Live Server)
+
+### Contact backend (optional)
+
+The contact form posts to `/api/contact`, handled by the Node backend:
+
+```bash
+cd backend
+npm install
+cp .env.example .env   # fill in SMTP credentials and recipient email
+npm start
+```
 
 ## Contact
 

@@ -53,6 +53,8 @@ const t = {
     'form.submit': 'Send Message',
     'contact.divider': 'or reach me directly',
     'footer.copy': '© 2026 Maximilian Rau',
+    'footer.legal': 'Legal Notice',
+    'footer.privacy': 'Privacy Policy',
   },
   de: {
     'nav.about': 'Über mich',
@@ -107,6 +109,8 @@ const t = {
     'form.submit': 'Nachricht senden',
     'contact.divider': 'oder direkt erreichen',
     'footer.copy': '© 2026 Maximilian Rau',
+    'footer.legal': 'Impressum',
+    'footer.privacy': 'Datenschutz',
   },
 };
 
