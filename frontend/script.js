@@ -11,9 +11,9 @@ const t = {
       "Software Engineering student at the University of Stuttgart - building full-stack applications and exploring the depths of computer architecture and systems programming.",
     "hero.btn.projects": "View Projects",
     "hero.btn.contact": "Get in Touch",
-    "about.label": "01 — About",
+    "about.label": "01 - About",
     "about.title": "Who I Am",
-    "experience.label": "02 — Experience",
+    "experience.label": "02 - Experience",
     "experience.title": "Journey",
     "exp.hiwi.title": "Studentische Hilfskraft",
     "exp.hiwi.desc":
@@ -33,7 +33,7 @@ const t = {
     "about.stat.projects": "Projects",
     "about.stat.technologies": "Technologies",
     "about.stat.degree": "Software Eng.",
-    "projects.label": "03 — Work",
+    "projects.label": "03 - Work",
     "projects.title": "Featured Projects",
     "project.cpu.desc":
       "University project: a PicoBlaze-style 8-bit processor implemented in VHDL with a 2-stage pipeline, 16 general-purpose registers, and 256 I/O ports. Includes a custom C# assembler toolchain and comprehensive testbenches.",
@@ -44,13 +44,13 @@ const t = {
     "project.aiworkspace.desc":
       "AI-powered workspace for experimenting with large language models, automation workflows, and intelligent tooling. Designed to streamline development tasks and explore practical AI applications.",
     "projects.more": "View more on GitHub",
-    "skills.label": "04 — Skills",
+    "skills.label": "04 - Skills",
     "skills.title": "Technologies",
     "skills.group.languages": "Languages",
     "skills.group.frontend": "Frontend",
     "skills.group.backend": "Backend",
     "skills.group.tools": "Tools & Ops",
-    "contact.label": "05 — Contact",
+    "contact.label": "05 - Contact",
     "contact.title": "Get In Touch",
     "contact.desc":
       "I'm always open to new opportunities, collaborations, or a good technical conversation. Feel free to reach out.",
@@ -77,9 +77,9 @@ const t = {
       "Software-Engineering-Student an der Universität Stuttgart - Ich entwickle Full-Stack-Anwendungen und erforsche Computerarchitektur und Systemprogrammierung.",
     "hero.btn.projects": "Projekte ansehen",
     "hero.btn.contact": "Kontakt aufnehmen",
-    "about.label": "01 — Über mich",
+    "about.label": "01 - Über mich",
     "about.title": "Wer ich bin",
-    "experience.label": "02 — Werdegang",
+    "experience.label": "02 - Werdegang",
     "experience.title": "Mein Weg",
     "exp.hiwi.title": "Studentische Hilfskraft",
     "exp.hiwi.desc":
@@ -99,7 +99,7 @@ const t = {
     "about.stat.projects": "Projekte",
     "about.stat.technologies": "Technologien",
     "about.stat.degree": "Software Eng.",
-    "projects.label": "03 — Arbeit",
+    "projects.label": "03 - Arbeit",
     "projects.title": "Ausgewählte Projekte",
     "project.cpu.desc":
       "Universitätsprojekt: ein PicoBlaze-ähnlicher 8-Bit-Prozessor in VHDL mit 2-stufiger Pipeline, 16 Allzweckregistern und 256 I/O-Ports. Mit eigener C#-Assembler-Toolchain und Testbenches.",
@@ -110,13 +110,13 @@ const t = {
     "project.aiworkspace.desc":
       "KI-gestützter Workspace zum Experimentieren mit Large Language Models, Automatisierungs-Workflows und intelligenten Tools. Entwickelt zur Vereinfachung von Entwicklungsaufgaben und zur Erforschung praktischer KI-Anwendungen.",
     "projects.more": "Weitere Projekte auf GitHub",
-    "skills.label": "04 — Kenntnisse",
+    "skills.label": "04 - Kenntnisse",
     "skills.title": "Technologien",
     "skills.group.languages": "Sprachen",
     "skills.group.frontend": "Frontend",
     "skills.group.backend": "Backend",
     "skills.group.tools": "Tools & Betrieb",
-    "contact.label": "05 — Kontakt",
+    "contact.label": "05 - Kontakt",
     "contact.title": "Schreib mir",
     "contact.desc":
       "Ich bin offen für neue Möglichkeiten, Kooperationen oder ein gutes technisches Gespräch. Melde dich gerne.",
