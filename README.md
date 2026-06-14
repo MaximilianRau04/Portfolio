@@ -8,7 +8,7 @@ This site showcases selected projects, my technical focus, and my background as 
 You can view the website here:
 [raudev.com](https://raudev.com)
 
-The site is self-hosted on my own server: nginx serves the static frontend and
+The site is self-hosted on a server: nginx serves the static frontend and
 reverse-proxies the contact API to a Node/Express backend (deployment configs in
 [`deploy/`](deploy/)).
 
@@ -16,8 +16,8 @@ reverse-proxies the contact API to a Node/Express backend (deployment configs in
 
 My portfolio currently includes the following projects:
 
-1. **Todo Application**  
-    Full-stack task management application built with Spring Boot and Vue.js.
+1. **AI Workspace**  
+    AI-powered workspace for experimenting with large language models, automation workflows, and intelligent development tools.
 2. **Event & Exchange Day Manager**  
     Internship project for managing company events, built with Spring Boot and Vue.js.
 3. **CineMate**  
@@ -62,7 +62,7 @@ npm start
 
 **Maximilian Rau**
 
-- GitHub: [@MaximilianRau04](https://github.com/MaximilianRau04)
+- Email: [maximilian@raudev.com](mailto:maximilian@raudev.com)
 - LinkedIn: [Maximilian Rau](https://www.linkedin.com/in/maximilian-rau-b63199340/)
 
 ---
