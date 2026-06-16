@@ -15,14 +15,18 @@ const t = {
     "about.title": "Who I Am",
     "experience.label": "02 - Experience",
     "experience.title": "Journey",
-    "exp.hiwi.title": "Studentische Hilfskraft",
+    "exp.hiwi.title": "Student Research Assistant",
+    "exp.hiwi.org": "ISW, University of Stuttgart",
     "exp.hiwi.desc":
       "Student research assistant at the Institute for Control Engineering of Machine Tools and Manufacturing Units, supporting research and frontend development.",
     "exp.uni.title": "B.Sc. Software Engineering",
+    "exp.uni.org": "University of Stuttgart",
     "exp.uni.desc":
       "Studying software architecture, algorithms, computer architecture, and systems programming. Projects span from processor design in VHDL to full-stack web applications.",
-    "exp.school.title": "Abitur",
+    "exp.school.title": "High School Diploma",
     "exp.school.org": "Oscar-Paret-Schule Freiberg am Neckar",
+    "exp.school.desc":
+      "Focused on mathematics, physics, and computer science - where I first discovered my passion for programming.",
     "exp.type.edu": "Education",
     "exp.type.work": "Internship",
     "exp.type.hiwi": "HiWi",
@@ -30,6 +34,8 @@ const t = {
       "I'm a <strong>Software Engineering student</strong> at the University of Stuttgart with a passion for building clean, scalable systems. My work spans the full stack - from crafting REST APIs with Spring Boot to building reactive frontends with Vue.js and React.",
     "about.p2":
       "I believe great software is defined by its foundations: thoughtful architecture, thorough testing, and maintainable code. I enjoy diving deep into complex problems and finding elegant solutions.",
+    "about.p3":
+      "Outside of code, you'll find me at the gym, hanging out with friends, or gaming.",
     "about.stat.projects": "Projects",
     "about.stat.technologies": "Technologies",
     "about.stat.degree": "Software Eng.",
@@ -82,13 +88,17 @@ const t = {
     "experience.label": "02 - Werdegang",
     "experience.title": "Mein Weg",
     "exp.hiwi.title": "Studentische Hilfskraft",
+    "exp.hiwi.org": "ISW, Universität Stuttgart",
     "exp.hiwi.desc":
       "Studentische Hilfskraft am Institut für Steuerungstechnik der Werkzeugmaschinen und Fertigungseinrichtungen, mit Unterstützung in Forschung und Frontend-Entwicklung.",
     "exp.uni.title": "B.Sc. Software Engineering",
+    "exp.uni.org": "Universität Stuttgart",
     "exp.uni.desc":
       "Studium mit Schwerpunkten in Softwarearchitektur, Algorithmen, Rechnerarchitektur und Systemprogrammierung. Projekte reichen vom Prozessordesign in VHDL bis zu Full-Stack-Webanwendungen.",
     "exp.school.title": "Abitur",
     "exp.school.org": "Oscar-Paret-Schule Freiberg am Neckar",
+    "exp.school.desc":
+      "Schwerpunkte in Mathematik, Physik und Informatik - hier habe ich meine Leidenschaft fürs Programmieren entdeckt.",
     "exp.type.edu": "Bildung",
     "exp.type.work": "Praktikum",
     "exp.type.hiwi": "HiWi",
@@ -96,6 +106,8 @@ const t = {
       "Ich bin ein <strong>Software-Engineering-Student</strong> an der Universität Stuttgart mit einer Leidenschaft für saubere, skalierbare Systeme. Meine Arbeit umfasst den gesamten Stack - von REST-APIs mit Spring Boot bis hin zu reaktiven Frontends mit Vue.js und React.",
     "about.p2":
       "Gute Software wird durch ihre Grundlagen definiert: durchdachte Architektur, gründliche Tests und wartbaren Code. Ich tauche gerne tief in komplexe Probleme ein und finde elegante Lösungen.",
+    "about.p3":
+      "Neben dem Code findet man mich im Gym, beim Treffen mit Freunden oder beim Zocken.",
     "about.stat.projects": "Projekte",
     "about.stat.technologies": "Technologien",
     "about.stat.degree": "Software Eng.",
