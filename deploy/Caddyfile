@@ -17,25 +17,34 @@
     admin localhost:2019
 }
 
-http://raudev.com, http://www.raudev.com {
-    root * /var/www/portfolio/frontend
+:80 {
+    @own_domain host raudev.com www.raudev.com
 
-    # Block hotlinking of static assets from external domains
-    @hotlink {
-        path *.css *.js *.woff *.woff2 *.ttf *.otf *.eot *.svg *.png *.jpg *.jpeg *.gif *.ico *.webp
-        header Referer *
-        not header_regexp Referer `raudev\.com`
+    handle @own_domain {
+        root * /var/www/portfolio/frontend
+
+        # Block hotlinking of static assets from external domains
+        @hotlink {
+            path *.css *.js *.woff *.woff2 *.ttf *.otf *.eot *.svg *.png *.jpg *.jpeg *.gif *.ico *.webp
+            header Referer *
+            not header_regexp Referer `raudev\.com`
+        }
+        respond @hotlink 403
+
+        # Block API calls that don't originate from own domain
+        @external_api {
+            path /api/*
+            header Referer *
+            not header_regexp Referer `raudev\.com`
+        }
+        respond @external_api 403
+
+        reverse_proxy /api/* localhost:3001
+        file_server
     }
-    respond @hotlink 403
 
-    # Block API calls that don't originate from own domain
-    @external_api {
-        path /api/*
-        header Referer *
-        not header_regexp Referer `raudev\.com`
+    # Drop all other hostnames
+    handle {
+        respond 403
     }
-    respond @external_api 403
-
-    reverse_proxy /api/* localhost:3001
-    file_server
 }
