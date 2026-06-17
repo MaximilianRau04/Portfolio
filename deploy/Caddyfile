@@ -1,0 +1,41 @@
+################################################################################
+# Caddyfile for raudev.com
+#
+# - Only responds to raudev.com / www.raudev.com — unknown hostnames get
+#   no response (blocks domain squatters pointing their DNS here)
+# - Serves the static frontend from /var/www/portfolio/frontend
+# - Reverse-proxies /api/ to the Node contact backend on localhost:3001
+# - Blocks hotlinking of static assets from external domains
+# - Blocks API calls from external origins
+#
+# Install:
+#   sudo cp deploy/Caddyfile /etc/caddy/Caddyfile
+#   sudo systemctl reload caddy
+################################################################################
+
+{
+    admin localhost:2019
+}
+
+http://raudev.com, http://www.raudev.com {
+    root * /var/www/portfolio/frontend
+
+    # Block hotlinking of static assets from external domains
+    @hotlink {
+        path *.css *.js *.woff *.woff2 *.ttf *.otf *.eot *.svg *.png *.jpg *.jpeg *.gif *.ico *.webp
+        header Referer *
+        not header_regexp Referer `raudev\.com`
+    }
+    respond @hotlink 403
+
+    # Block API calls that don't originate from own domain
+    @external_api {
+        path /api/*
+        header Referer *
+        not header_regexp Referer `raudev\.com`
+    }
+    respond @external_api 403
+
+    reverse_proxy /api/* localhost:3001
+    file_server
+}
