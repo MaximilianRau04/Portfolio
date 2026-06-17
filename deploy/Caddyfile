@@ -15,6 +15,7 @@
 
 {
     admin localhost:2019
+    auto_https off
 }
 
 http:// {
@@ -22,6 +23,10 @@ http:// {
 
     handle @own_domain {
         root * /var/www/portfolio/frontend
+
+        # Block visitors redirected from known bad domains
+        @bad_referer header_regexp Referer `arschgeficke\.de`
+        respond @bad_referer 403
 
         # Block hotlinking of static assets from external domains
         @hotlink {
