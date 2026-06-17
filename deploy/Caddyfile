@@ -17,7 +17,7 @@
     admin localhost:2019
 }
 
-:80 {
+http:// {
     @own_domain host raudev.com www.raudev.com
 
     handle @own_domain {
