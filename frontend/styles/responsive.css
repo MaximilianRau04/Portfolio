@@ -46,6 +46,16 @@
     display: none;
   }
 
+  .proj-detail {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .proj-thumb {
+    width: 100%;
+    max-width: 420px;
+  }
+
   .skill-card {
     min-width: 64px;
     padding: 0.7rem 0.6rem;

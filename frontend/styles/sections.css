@@ -1210,9 +1210,46 @@
 
 .proj-item:hover .proj-detail,
 .proj-item:focus-within .proj-detail {
-  max-height: 260px;
+  max-height: 420px;
   opacity: 1;
   padding-bottom: 1.3rem;
+}
+
+.proj-detail {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.proj-text {
+  min-width: 0;
+}
+
+.proj-thumb {
+  width: 240px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-3);
+  overflow: hidden;
+}
+
+.proj-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Diagrams keep their own aspect ratio on a white sheet */
+.proj-thumb--diagram {
+  background: #fff;
+}
+
+.proj-thumb--diagram img {
+  object-fit: contain;
+  padding: 0.35rem;
 }
 
 .proj-detail p {

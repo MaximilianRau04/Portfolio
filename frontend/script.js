@@ -45,10 +45,14 @@ const t = {
       "University project: a PicoBlaze-style 8-bit processor implemented in VHDL with a 2-stage pipeline, 16 general-purpose registers, and 256 I/O ports. Includes a custom C# assembler toolchain and comprehensive testbenches.",
     "project.cinemate.desc":
       "Web application for discovering, managing, and tracking movies and TV series. Built with a Spring Boot REST API backend and a React frontend with a clean, responsive UI.",
-    "project.event.desc":
-      "Enterprise web application developed during a software engineering internship at itestra. Manages company events and exchange days with role-based access control and scheduling.",
+    "project.exchangeday.desc":
+      "Web application developed during a software engineering internship at itestra. Employees browse and register for Exchange Day workshops, confirm attendance via QR code, and leave feedback that is summarized for organizers.",
     "project.aiworkspace.desc":
       "AI-powered workspace for experimenting with large language models, automation workflows, and intelligent tooling. Designed to streamline development tasks and explore practical AI applications.",
+    "project.cpu.alt": "Top-level block diagram of the 8-bit processor",
+    "project.aiworkspace.alt": "Screenshot of the AI Workspace interface",
+    "project.cinemate.alt": "Screenshot of the CineMate movie overview",
+    "project.exchangeday.alt": "Screenshot of the Exchange Day Manager workshop overview",
     "projects.more": "View more on GitHub",
     "skills.label": "04 - Skills",
     "skills.title": "Technologies",
@@ -117,10 +121,14 @@ const t = {
       "Universitätsprojekt: ein PicoBlaze-ähnlicher 8-Bit-Prozessor in VHDL mit 2-stufiger Pipeline, 16 Allzweckregistern und 256 I/O-Ports. Mit eigener C#-Assembler-Toolchain und Testbenches.",
     "project.cinemate.desc":
       "Webanwendung zum Entdecken, Verwalten und Verfolgen von Filmen und Serien. Spring-Boot-REST-API-Backend und React-Frontend mit übersichtlicher, responsiver Oberfläche.",
-    "project.event.desc":
-      "Enterprise-Webanwendung, entwickelt im Software-Engineering-Praktikum bei itestra. Verwaltet Firmenveranstaltungen mit rollenbasierter Zugriffskontrolle und Terminplanung.",
+    "project.exchangeday.desc":
+      "Webanwendung, entwickelt im Software-Engineering-Praktikum bei itestra. Mitarbeitende melden sich zu Workshops der Exchange Days an, bestätigen ihre Teilnahme per QR-Code und geben Feedback, das für die Organisatoren zusammengefasst wird.",
     "project.aiworkspace.desc":
       "KI-gestützter Workspace zum Experimentieren mit Large Language Models, Automatisierungs-Workflows und intelligenten Tools. Entwickelt zur Vereinfachung von Entwicklungsaufgaben und zur Erforschung praktischer KI-Anwendungen.",
+    "project.cpu.alt": "Top-Level-Blockdiagramm des 8-Bit-Prozessors",
+    "project.aiworkspace.alt": "Screenshot der AI-Workspace-Oberfläche",
+    "project.cinemate.alt": "Screenshot der Filmübersicht von CineMate",
+    "project.exchangeday.alt": "Screenshot der Workshop-Übersicht im Exchange Day Manager",
     "projects.more": "Weitere Projekte auf GitHub",
     "skills.label": "04 - Kenntnisse",
     "skills.title": "Technologien",
@@ -176,6 +184,10 @@ function applyTranslations(lang) {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
     const key = el.getAttribute("data-i18n-placeholder");
     if (t[lang]?.[key] !== undefined) el.placeholder = t[lang][key];
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-alt");
+    if (t[lang]?.[key] !== undefined) el.alt = t[lang][key];
   });
   document.documentElement.lang = lang;
   document.getElementById("lang-toggle").textContent =
