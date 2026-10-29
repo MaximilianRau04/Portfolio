@@ -1,0 +1,32 @@
+################################################################################
+# systemd unit for the netcup DynDNS updater (triggered by ddns-netcup.timer)
+#
+# Install:
+#   sudo install -m 755 deploy/ddns-netcup.sh /usr/local/bin/ddns-netcup
+#   sudo install -m 600 deploy/ddns-netcup.env.example /etc/ddns-netcup.env
+#   sudoedit /etc/ddns-netcup.env          # fill in the API credentials
+#   sudo cp deploy/ddns-netcup.service deploy/ddns-netcup.timer /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now ddns-netcup.timer
+#
+# Logs:     journalctl -u ddns-netcup
+# Run now:  sudo systemctl start ddns-netcup
+# Force:    sudo rm /var/lib/ddns-netcup/last_ip && sudo systemctl start ddns-netcup
+################################################################################
+
+[Unit]
+Description=netcup DynDNS updater
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+DynamicUser=yes
+EnvironmentFile=/etc/ddns-netcup.env
+StateDirectory=ddns-netcup
+ExecStart=/usr/local/bin/ddns-netcup
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true

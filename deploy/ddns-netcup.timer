@@ -1,0 +1,14 @@
+################################################################################
+# Runs ddns-netcup.service every 5 minutes. The script only calls the netcup
+# API when the public IPv4 has changed. See ddns-netcup.service for install.
+################################################################################
+
+[Unit]
+Description=Run netcup DynDNS updater every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
