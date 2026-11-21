@@ -1,0 +1,29 @@
+################################################################################
+# systemd unit for the portfolio auto-deploy (triggered by portfolio-pull.timer)
+#
+# Install:
+#   sudo install -m 755 deploy/portfolio-pull.sh /usr/local/bin/portfolio-pull
+#   sudo cp deploy/portfolio-pull.service deploy/portfolio-pull.timer /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now portfolio-pull.timer
+#
+# Logs:     journalctl -u portfolio-pull
+# Run now:  sudo systemctl start portfolio-pull
+#
+# Runs as root only to restart portfolio-backend; git itself runs as the owner
+# of /var/www/portfolio (see the script).
+################################################################################
+
+[Unit]
+Description=Pull and deploy the portfolio from GitHub
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/portfolio-pull
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/var/www/portfolio

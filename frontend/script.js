@@ -41,6 +41,10 @@ const t = {
     "about.stat.degree": "Software Eng.",
     "projects.label": "03 - Work",
     "projects.title": "Featured Projects",
+    "project.routeplanner.desc":
+      "Team project: plans cycling round trips of a chosen length from any start point. A C++23 backend builds a routing graph from OpenStreetMap and SRTM elevation data, generates candidate loops with a polygon and an isochrone method, refines them with a Pareto local search and picks the variants that best fit five sliders: hills, bike routes, nature, unpaved and curvy. The Vue frontend shows alternatives with elevation profiles, routes through chosen POIs and exports GPX.",
+    "project.routeplanner.meta": "Team project · C++23 · Vue",
+    "project.routeplanner.alt": "Screenshot of the Round Trip Planner with a route on the map",
     "project.cpu.desc":
       "University project: a PicoBlaze-style 8-bit processor implemented in VHDL with a 2-stage pipeline, 16 general-purpose registers, and 256 I/O ports. Includes a custom C# assembler toolchain and comprehensive testbenches.",
     "project.cinemate.desc":
@@ -117,6 +121,10 @@ const t = {
     "about.stat.degree": "Software Eng.",
     "projects.label": "03 - Arbeit",
     "projects.title": "Ausgewählte Projekte",
+    "project.routeplanner.desc":
+      "Teamprojekt: plant Radrundtouren mit gewünschter Länge ab einem beliebigen Startpunkt. Ein C++23-Backend baut aus OpenStreetMap- und SRTM-Höhendaten einen Routing-Graphen, erzeugt Kandidaten mit einer Polygon- und einer Isochronen-Methode, verbessert sie mit einer Pareto-Lokalsuche und wählt die Varianten, die am besten zu fünf Reglern passen: Höhenmeter, Radwege, Natur, unbefestigte Wege und Kurven. Das Vue-Frontend zeigt Alternativen mit Höhenprofil, führt die Route über gewählte POIs und exportiert GPX.",
+    "project.routeplanner.meta": "Teamprojekt · C++23 · Vue",
+    "project.routeplanner.alt": "Screenshot des Round Trip Planners mit einer Route auf der Karte",
     "project.cpu.desc":
       "Universitätsprojekt: ein PicoBlaze-ähnlicher 8-Bit-Prozessor in VHDL mit 2-stufiger Pipeline, 16 Allzweckregistern und 256 I/O-Ports. Mit eigener C#-Assembler-Toolchain und Testbenches.",
     "project.cinemate.desc":

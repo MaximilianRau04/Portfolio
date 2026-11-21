@@ -24,6 +24,8 @@ My portfolio currently includes the following projects:
     Tracking application for movies and series, built with Spring Boot and React.
 4. **CPU Architecture Project**  
     Project focused on CPU architecture and computer organization.
+5. **Round Trip Planner**  
+    Cycling round-trip planner with preference-based routing, C++23 on OpenStreetMap + SRTM with a Vue frontend.
 
 ## Project Structure
 

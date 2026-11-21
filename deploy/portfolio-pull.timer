@@ -1,0 +1,14 @@
+################################################################################
+# Runs portfolio-pull.service every 5 minutes. The script only touches the
+# checkout when origin/main has new commits. See portfolio-pull.service.
+################################################################################
+
+[Unit]
+Description=Pull the portfolio from GitHub every 5 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
