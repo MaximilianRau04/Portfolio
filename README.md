@@ -16,16 +16,16 @@ reverse-proxies the contact API to a Node/Express backend (deployment configs in
 
 My portfolio currently includes the following projects:
 
-1. **AI Workspace**  
-    AI-powered workspace for experimenting with large language models, automation workflows, and intelligent development tools.
-2. **Event & Exchange Day Manager**  
-    Internship project for managing company events, built with Spring Boot and Vue.js.
-3. **CineMate**  
-    Tracking application for movies and series, built with Spring Boot and React.
-4. **CPU Architecture Project**  
-    Project focused on CPU architecture and computer organization.
-5. **Round Trip Planner**  
+1. **Compass**  
+    Self-hosted personal dashboard (tasks, calendar, health, finance) with its own MCP server, built with FastAPI and React.
+2. **Round Trip Planner**  
     Cycling round-trip planner with preference-based routing, C++23 on OpenStreetMap + SRTM with a Vue frontend.
+3. **CPU Architecture Project**  
+    Project focused on CPU architecture and computer organization.
+4. **AI Workspace**  
+    AI-powered workspace for experimenting with large language models, automation workflows, and intelligent development tools.
+5. **CineMate**  
+    Tracking application for movies and series, built with Spring Boot and React.
 
 ## Project Structure
 
